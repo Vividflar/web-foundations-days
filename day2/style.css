@@ -39,3 +39,24 @@ header p {
     margin: 0 0 16px;
     font-size: 18px;
 }
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 6px;
+    transition: background-color 0.2s ease; transform 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #088a70;
+    transform: translateY(-2px);
+}
+
