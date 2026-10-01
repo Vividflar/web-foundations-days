@@ -60,3 +60,32 @@ nav a:focus {
     transform: translateY(-2px);
 }
 
+main {
+    max-width: 800px;
+    margin: 24px auto;
+    padding: 0 16px;
+}
+
+section {
+    margin-bottom: 24px;
+    padding: 20px;
+    background-color: #ffffffda;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.features li {
+    padding: 16px;
+    background-color: #e8f6f3;
+    border: 1px solid #b9e3da;
+    border-radius: 8px;
+}
