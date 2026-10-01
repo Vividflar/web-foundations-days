@@ -1,20 +1,16 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box reset;
+    box-sizing: border-box;
 }
 
 body {
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 16x;
-    line-height-step: 1.5;
+    font-size: 16px;
+    line-height: 1.5;
     color: #222;
     background-color: #f4f7f6;
-}
-
-header {
-
 }
 
 h1,
@@ -51,7 +47,7 @@ nav a {
     color: #fff;
     text-decoration: none;
     padding: 6px;
-    transition: background-color 0.2s ease; transform 0.2s ease;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 nav a:hover,
@@ -163,7 +159,7 @@ textarea:focus {
     border-radius: 8px;
 }
 
-note-count {
+#note-count {
     margin-top: 0;
     font-weight: 600;
 }
