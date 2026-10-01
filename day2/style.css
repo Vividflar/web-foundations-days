@@ -89,3 +89,112 @@ section {
     border: 1px solid #b9e3da;
     border-radius: 8px;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background-color: #0ba184;
+    color: #fff;
+}
+
+form p {
+    margin: 0 0 16px;
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    font: inherit;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #0ba184;
+    border-color: #0ba184;
+}
+
+#note-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+#note-form label {
+    flex-basis: 100%;
+    margin-bottom: 0;
+}
+
+#note-input {
+    flex: 1;
+}
+
+#note-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#note-list li {
+    margin-bottom: 10px;
+    padding: 12px 16px;
+    background-color: #fff8dc;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+note-count {
+    margin-top: 0;
+    font-weight: 600;
+}
+
+main > h2 {
+    margin-bottom: 8px;
+}
+
+main > p {
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+ol {
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+button{
+    padding: 10px 20px;
+    font: inherit;
+    color: #fff;
+    background-color: #0ba184;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #088a70;
+    transform: translateY(-2px);
+}
+
