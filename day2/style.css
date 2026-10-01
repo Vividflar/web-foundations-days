@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box reset;
+}
+
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16x;
+    line-height-step: 1.5;
+    color: #222;
+    background-color: #f4f7f6;
+}
+
+header {
+
+}
+
