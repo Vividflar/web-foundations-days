@@ -151,7 +151,7 @@ textarea:focus {
     list-style: none;
 }
 
-#note-list li {
+#notes-list li {
     margin-bottom: 10px;
     padding: 12px 16px;
     background-color: #fff8dc;
