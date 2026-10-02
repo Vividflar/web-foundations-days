@@ -36,7 +36,7 @@ header p {
     font-size: 18px;
 }
 
-nav a {
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,7 +145,7 @@ textarea:focus {
     flex: 1;
 }
 
-#note-list{
+#notes-list{
     margin: 0;
     padding: 0;
     list-style: none;
