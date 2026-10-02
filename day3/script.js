@@ -8,3 +8,10 @@ let notes = [
 
 const VALID_CATEGORIES = ["personal", "work", "study"];
 
+// ---------- 1. searchNotes ----------
+// Returns an array of notes whose text contains word (ignoring case).
+function searchNotes(word) {
+  const search = word.toLowerCase();
+  return notes.filter((note) => note.text.toLowerCase().includes(search));
+}
+ 
