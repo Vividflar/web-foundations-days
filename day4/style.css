@@ -42,3 +42,60 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* ---------- Header --------- */
+header {
+  padding: 24px 16px;
+  text-align: center;
+  color: var(--accent-text);
+  background-color: var(--accent);
+}
+ 
+header h1 {
+  margin: 0 0 4px
+}
+ 
+header p {
+  margin: 0 0 12px;
+}
+ 
+/* ---------- Main card ---------- */
+main {
+  max-width: 600px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+ 
+section {
+  padding: 20px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+ 
+label {
+  display: block;
+  margin-bottom: 6px;
+}
+ 
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  font: inherit;
+  color: var(--text);
+  background-color: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  resize: vertical;
+}
+ 
+textarea:focus {
+  outline: 2px solid var(--accent);
+}
+ 
+#char-count,
+#word-count {
+  margin: 8px 0 0;
+  color: var(--muted);
+}
+
