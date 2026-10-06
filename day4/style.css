@@ -12,3 +12,33 @@
   --danger: #d11a2a;  /* red */
 }
 
+/* Dark theme: only the variables change */
+body.dark {
+  --bg: #121816;
+  --text: #e8efed;
+  --card-bg: #1d2623;
+  --border: #3a4a45;
+  --accent: #14b896;
+  --accent-hover: #3fd1b2;
+  --accent-text: #08130f;
+  --muted: #a8b8b3;
+  --warning: #ffa94d;
+  --danger: #ff6b6b;
+}
+
+/* ---------- Reset and base ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ 
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.5;
+  color: var(--text);
+  background-color: var(--bg);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
