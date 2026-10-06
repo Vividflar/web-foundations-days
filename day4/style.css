@@ -100,3 +100,43 @@ textarea:focus {
   color: var(--muted);
 }
 
+/* ---------- Counter states ---------- */
+.warning {
+  color: var(--warning);
+}
+ 
+.over {
+  color: var(--danger);
+  font-weight: bold;
+}
+ 
+/* ---------- Buttons ---------- */
+button {
+  padding: 10px 20px;
+  font: inherit;
+  color: var(--accent-text);
+  background-color: var(--accent);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+ 
+button:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(-2px);
+}
+ 
+#theme-toggle {
+  color: var(--accent);
+  background-color: var(--accent-text);
+}
+ 
+#theme-toggle:hover {
+  background-color: var(--accent-text);
+  opacity: 0.85;
+}
+ 
+#clear-btn {
+  margin-top: 16px;
+}
