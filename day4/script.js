@@ -25,3 +25,25 @@ function updateCounts() {
   charCount.classList.toggle("warning", chars > WARNING_AT && chars <= MAX_CHARS);
 }
 
+// ---------- Draft ----------
+function saveDraft() {
+  if (noteText.value === "") {
+    localStorage.removeItem(DRAFT_KEY);
+  } else {
+    localStorage.setItem(DRAFT_KEY, noteText.value);
+  }
+}
+ 
+function loadDraft() {
+  const draft = localStorage.getItem(DRAFT_KEY);
+  if (draft !== null) {
+    noteText.value = draft;
+  }
+}
+ 
+function clearNote() {
+  noteText.value = "";
+  localStorage.removeItem(DRAFT_KEY);
+  updateCounts();
+  noteText.focus();
+}
