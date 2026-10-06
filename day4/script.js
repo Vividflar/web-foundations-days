@@ -47,3 +47,39 @@ function clearNote() {
   updateCounts();
   noteText.focus();
 }
+
+// ---------- Theme ----------
+function applyTheme(isDark) {
+  document.body.classList.toggle("dark", isDark);
+  // The button label names the mode you will switch TO
+  themeToggle.textContent = isDark ? "Light mode" : "Dark mode";
+}
+ 
+function loadTheme() {
+  applyTheme(localStorage.getItem(THEME_KEY) === "dark");
+}
+ 
+// ---------- Events ----------
+noteText.addEventListener("input", () => {
+  updateCounts();
+  saveDraft();
+});
+ 
+noteText.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    clearNote();
+  }
+});
+ 
+clearBtn.addEventListener("click", clearNote);
+ 
+themeToggle.addEventListener("click", () => {
+  const isDark = !document.body.classList.contains("dark");
+  applyTheme(isDark);
+  localStorage.setItem(THEME_KEY, isDark ? "dark" : "light");
+});
+ 
+// ---------- On page load ----------
+loadDraft();
+loadTheme();
+updateCounts();
