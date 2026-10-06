@@ -42,7 +42,7 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* ---------- Header --------- */
+/* ---------- Header ---------- */
 header {
   padding: 24px 16px;
   text-align: center;
@@ -51,7 +51,7 @@ header {
 }
  
 header h1 {
-  margin: 0 0 4px
+  margin: 0 0 4px;
 }
  
 header p {
