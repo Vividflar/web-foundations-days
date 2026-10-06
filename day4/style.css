@@ -1,0 +1,14 @@
+/* ---------- Colours as variables ---------- */
+:root {
+  --bg: #f4f7f6;
+  --text: #222222;
+  --card-bg: #ffffff;
+  --border: #cccccc;
+  --accent: #0ba184;
+  --accent-hover: #088a70;
+  --accent-text: #ffffff;
+  --muted: #555555;
+  --warning: #d97706; /* orange */
+  --danger: #d11a2a;  /* red */
+}
+
